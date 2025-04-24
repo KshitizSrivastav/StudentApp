@@ -3,6 +3,8 @@ const fs = require('fs').promises;
 const app = express();
 const port = 7071;
 app.use(express.json());
+const cors = require('cors');
+app.use(cors());
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT, OPTIONS');

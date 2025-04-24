@@ -1,7 +1,7 @@
 {
   "name": "noderegistration",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "expressapp.js",
   "scripts": {
     "start": "nodemon expressapp.js",
     "test": "echo \"Error: no test specified\" && exit 1"

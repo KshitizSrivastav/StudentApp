@@ -13,7 +13,7 @@ function Login() {
     console.log("Password:", password);
 
     // Send data to the backend server
-    fetch('http://localhost:7071/login', {
+    fetch('https://studentapp-i1yx.onrender.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

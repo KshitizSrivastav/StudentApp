@@ -15,7 +15,7 @@ function Register() {
         console.log("Password:", password);
 
         // Send data to the backend server
-        fetch('http://localhost:7071/register', {
+        fetch('https://studentapp-i1yx.onrender.com/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

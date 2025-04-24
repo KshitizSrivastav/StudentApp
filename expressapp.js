@@ -58,6 +58,16 @@ app.post('/login', async (req, res) => {
     }
   });
 
+app.get("/admin/show",async(req,res)=>{
+  try{
+    const fdata=await fs.readFile('student.json',{encoding:'utf-8'});
+    const studentdata=JSON.parse(fdata);
+    res.json({msg:studentdata})
+  }catch(err){
+      res.status(500).json({msg:err.meesage})
+  }
+})
+
 app.delete('/data', (req, res) => { 
   console.log('Delete request received');
   res.send('Data deleted');
